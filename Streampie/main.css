@@ -27,10 +27,10 @@ body {
 }
 
 #topBar {
-  background-color: #ffff66;
+  background-color: #eb5e5a;
   position: absolute;
   padding-bottom: 8px;
-  color: #ffff66;
+  color: white;
   text-transform: uppercase;
   font-family: 'Righteous', cursive;
   text-shadow: -3px 3px 0px black;
@@ -45,15 +45,18 @@ body {
 }
 
 .lyrics {
+  background-color: white;
   position: relative;
-  border: 2px solid;
+  border: 2px solid black;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 20px;
-  margin-top: 10em;
+  margin-top: 5em;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Slabo 27px', serif;
+  font-size: 19pt;
 }
 
 #navBar {
@@ -75,11 +78,10 @@ body {
   text-align: center;
   display: inline-block;
   text-transform: lowercase;
-  font-variant: small-caps;
-  font-weight: 700;
+  font-family: 'Slabo 27px', sans-serif;
   padding-right: 1em;
   padding-left: 1em;
-  letter-spacing: .3em;
+  letter-spacing: .2em;
   font-size: 14pt;
   line-height: normal;
 }
@@ -134,7 +136,7 @@ body {
   background-image: url(bannerEx.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position-y: 62%;
+  background-position-y: 50%;
   height: 18em;
   width: 100%;
   top: 6.4em;
@@ -151,7 +153,7 @@ body {
   background-image: url(revanTemp.png);
   background-size: 101%;
   background-repeat: no-repeat;
-  border: 2px solid #ffff99;
+  border: 2px solid #eb5e5a;
   border-radius: 3px;
 }
 
@@ -162,23 +164,29 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  border: 2px solid black;
   margin-top: -15.6em;
-  margin-left: 36%;
+  margin-left: 33%;
+  font-family: 'Inconsolata', monospace;
 }
 
 .banner .details #title {
   line-height: 0;
   font-weight: bold;
-  font-size: 28pt;
-  color: #ffff66;
+  font-size: 30pt;
+  color: #eb5e5a;
 }
 
 .banner .details #artist {
-  font-size: 20pt;
+  font-size: 25pt;
   color: #e6e6e6;
   font-weight: bold;
   line-height: 0;
+}
+
+.banner .details span {
+  background-color: black;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /*

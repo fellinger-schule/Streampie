@@ -7,6 +7,8 @@
     }
 }
 
+$primary2: #eb5e5a;
+$babyBlue: lighten(blue, 20%);
 $primary: #2a2d32;
 $sec: darken(white, 20%);
 
@@ -22,11 +24,11 @@ body{
 
 //-----------------------TOPBAR----------------------------
 #topBar{
-    background-color: lighten(yellow, 20%);
+    background-color: $primary2;
     position: absolute;
     padding-bottom: 8px;
     
-    color: lighten(yellow, 20%);
+    color: white;
     text-transform: uppercase;
     
     font-family: 'Righteous', cursive;
@@ -44,15 +46,20 @@ body{
 
 //-----------------------LYRICS----------------------------
 .lyrics{
+    background-color: white;
+
     position: relative;
 
-    border: 2px solid;
+    border: 2px solid black;
     width: fit-content;
     padding: 20px;
     
-    margin-top: 10em;
+    margin-top: 5em;
     margin-left: auto;
     margin-right: auto;
+
+    font-family: 'Slabo 27px', serif;
+    font-size: 19pt;
 }
 
 //---------------NAVBAR( + Searchbar)----------------
@@ -77,12 +84,13 @@ body{
             display: inline-block;
             
             text-transform: lowercase;
-            font-variant: small-caps;
-            font-weight: 700;
+            font-family: 'Slabo 27px', sans-serif;
+
+
             padding-right: 1em;
             padding-left: 1em;
             
-            letter-spacing: .3em;
+            letter-spacing: .2em;
             font-size: 14pt;
             line-height: normal;            
 
@@ -141,7 +149,7 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
 
-    background-position-y: 62%;
+    background-position-y: 50%;
     height: 18em;
     width: 100%;
 
@@ -163,7 +171,7 @@ body{
         background-size: 101%;
         background-repeat: no-repeat;
 
-        border: 2px solid lighten(yellow, 30%);
+        border: 2px solid $primary2;
         border-radius: 3px;
     }
 
@@ -172,23 +180,30 @@ body{
         width: fit-content;
         height: fit-content;
 
-        border: 2px solid black;
+        //border: 2px solid black;
         
         margin-top: -15.6em;
-        margin-left: 36%;
+        margin-left: 33%;
 
+        font-family: 'Inconsolata', monospace;
+        
         //---texte---
-        #title{
+        #title{            
             line-height: 0;
             font-weight: bold;
-            font-size: 28pt;
-            color: lighten(yellow, 20%);            
+            font-size: 30pt;
+            color: $primary2;            
         }
         #artist{
-            font-size: 20pt;
+            font-size: 25pt;
             color: lighten($sec, 10%);
             font-weight: bold;
             line-height: 0;
+        }
+        span{
+            background-color: rgb(0, 0, 0);
+            padding-left: 5px;
+            padding-right: 5px;
         }
     }
 }
