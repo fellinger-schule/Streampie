@@ -66,7 +66,6 @@ body {
   background-color: #eb5e5a;
   position: absolute;
   padding-bottom: 8px;
-  color: white;
   text-transform: uppercase;
   font-family: 'Righteous', cursive;
   text-shadow: -3px 3px 0px black;
@@ -78,6 +77,11 @@ body {
   left: 0;
   height: 45px;
   width: 100%;
+}
+
+#topBar a {
+  text-decoration: none;
+  color: white;
 }
 
 #navBar {
