@@ -1,9 +1,16 @@
+//---------------FARBEN------------------
+$primary2: #eb5e5a;
+$babyBlue: lighten(blue, 20%);
+$primary: #2a2d32;
+$sec: darken(white, 20%);
+
+
 @keyframes navBarAni{
     from {
         color: white;
     }
     to {
-        color: lighten(yellow, 20%);
+        color: lighten($primary2, 10%);
     }
 }
 @keyframes fadeIn {
@@ -15,11 +22,6 @@
     100% { opacity: 0.3 }
 }
 
-//---------------FARBEN------------------
-$primary2: #eb5e5a;
-$babyBlue: lighten(blue, 20%);
-$primary: #2a2d32;
-$sec: darken(white, 20%);
 
 html{
     scroll-behavior: smooth;
@@ -77,15 +79,15 @@ body{
             text-align: center;
             display: inline-block;
             
-            text-transform: lowercase;
-            font-family: 'Slabo 27px', sans-serif;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
             
             
             padding-right: 1em;
             padding-left: 1em;
             
             letter-spacing: .2em;
-            font-size: 14pt;
+            font-size: 11pt;
             line-height: normal;            
             
             //---------------------------------
@@ -93,29 +95,25 @@ body{
                 width: 15em;
                 height: 2em;
                 padding-left: 5px;            
-                
-                border-radius: 10px 0px 0 10px;
+                                
                 border: none;
                 border-right: 2px solid black;
                 
                 box-sizing: border-box;
-                font-family: 'Oswald', sans-serif;
-                letter-spacing: .05rem;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: .02rem;
             }
             input[type=submit]{            
                 display: inline-block;
-                width: 2.6em;
+                width: 2em;
                 height: 2em;                
-                border: none;
-                line-height: 2.1;
+                border: none;     
                 color: transparent;
                 
                 background: url(https://banner2.kisspng.com/20180802/rzx/kisspng-product-design-logo-magnifying-glass-organization-search-for-parts-servolog-co-il-5b62c7a18735e6.5710335215332002895538.jpg) center center no-repeat;
                 background-color: white;
                 background-position-x: -2px;
-                background-size: 100%;
-                
-                border-radius: 0 10px 10px 0;            
+                background-size: 100%;            
             }
             
             //---------------------------------
@@ -177,7 +175,7 @@ body{
         //border: 2px solid black;
         
         margin-top: -15.6em;
-        margin-left: 38em;
+        margin-left: 41.5em;
         
         font-family: 'Inconsolata', monospace;
         line-height: 0;
