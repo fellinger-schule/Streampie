@@ -4,7 +4,6 @@ $babyBlue: lighten(blue, 20%);
 $primary: #2a2d32;
 $sec: darken(white, 20%);
 
-
 @keyframes navBarAni{
     from {
         color: white;
@@ -21,7 +20,8 @@ $sec: darken(white, 20%);
     0% { opacity: 1 }
     100% { opacity: 0.3 }
 }
-
+//#region [ rbga(0, 205, 30, 0.1)]
+//#endregion
 
 html{
     scroll-behavior: smooth;
