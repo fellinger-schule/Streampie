@@ -1,0 +1,145 @@
+@-webkit-keyframes navBarAni {
+  from {
+    color: white;
+  }
+  to {
+    color: #f18a87;
+  }
+}
+
+@keyframes navBarAni {
+  from {
+    color: white;
+  }
+  to {
+    color: #f18a87;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 15px;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.banner {
+  position: relative;
+  background-image: url(../bilder/bannerEx.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  height: 18em;
+  width: 100%;
+  top: 6.4em;
+  border: 2px solid black;
+  margin-left: -0.48%;
+  padding-right: 0.76%;
+}
+
+.banner .albumCover {
+  height: 230px;
+  width: 230px;
+  margin-left: 20%;
+  margin-top: 18px;
+  background-image: url(../bilder/revanTemp.png);
+  background-size: 101%;
+  background-repeat: no-repeat;
+  border: 2px solid #eb5e5a;
+  border-radius: 3px;
+}
+
+.banner .details {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: -15.6em;
+  margin-left: 41.5em;
+  font-family: 'Inconsolata', monospace;
+  line-height: 0;
+  font-weight: bold;
+}
+
+.banner .details ins {
+  text-decoration: none;
+  color: #6666ff;
+}
+
+.banner .details #title {
+  font-size: 30pt;
+  color: #eb5e5a;
+}
+
+.banner .details #artist {
+  font-size: 25pt;
+  color: #e6e6e6;
+}
+
+.banner .details #producer, .banner .details #album {
+  color: white;
+  line-height: .2;
+}
+
+.banner .details span {
+  background-color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.lyrics {
+  background-color: white;
+  position: relative;
+  border: 2px solid black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 40px;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Slabo 27px', serif;
+  font-size: 19pt;
+}
+/*# sourceMappingURL=main.css.map */

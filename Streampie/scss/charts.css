@@ -1,0 +1,90 @@
+#artist, #views, #likes {
+  text-decoration: none;
+  font-weight: 100;
+}
+
+#heading {
+  overflow: hidden;
+  position: relative;
+  top: 11em;
+  margin-left: auto;
+  margin-right: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 0;
+  text-align: center;
+  border-bottom: 5px solid black;
+}
+
+#heading h1 {
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-size: 50pt;
+}
+
+#heading h2 {
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16.5pt;
+  color: #e5322d;
+}
+
+#chartsList {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 70%;
+  top: 18em;
+  line-height: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#chartsList ul {
+  list-style-type: decimal;
+}
+
+#chartsList li {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-bottom: 2px solid #d9d9d9;
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  font-size: 15pt;
+  letter-spacing: .02em;
+}
+
+#chartsList li img {
+  width: 80px;
+  height: auto;
+  margin-right: 3em;
+  margin-left: 3em;
+  margin-bottom: -1.5em;
+}
+
+#chartsList li .viewsAndLikes {
+  height: 20px;
+  width: auto;
+  margin-bottom: -.22em;
+  margin-right: -5px;
+}
+
+#chartsList #artist {
+  margin-left: 7em;
+  margin-right: 7em;
+}
+
+#chartsList #views, #chartsList #likes {
+  font-size: 10pt;
+}
+
+#chartsList #likes {
+  color: #c71d18;
+}
+/*# sourceMappingURL=charts.css.map */

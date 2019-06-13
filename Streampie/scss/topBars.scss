@@ -1,0 +1,160 @@
+$primary2: #eb5e5a;
+$babyBlue: lighten(blue, 20%);
+$primary: #2a2d32;
+$sec: darken(white, 20%);
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 15px;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+//region[green]
+//------------------------TOPBAR----------------------------
+#topBar{
+    background-color: $primary2;
+    position: absolute;
+    padding-bottom: 8px;
+    
+    text-transform: uppercase;
+    
+    font-family: 'Righteous', cursive;
+    text-shadow: -3px 3px 0px black;
+    letter-spacing: .2em;
+    font-size: 20pt;
+    line-height: 0%;
+    text-align: center;
+    
+    top: 0;
+    left: 0;
+    height: 45px;
+    width: 100%;
+    
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+//------------------NAVBAR( + Searchbar)--------------------
+.navBar{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: 12px solid black;
+    
+    background-color: black;
+    
+    height: 40px;
+    margin-top: 45px;
+    
+    //-------------LIST---------------
+    ul{
+        text-align: center;
+        list-style: none;
+        
+        li{            
+            text-align: center;
+            display: inline-block;
+            
+            text-transform: lowercase;
+            font-family: 'Slabo 27px', sans-serif;
+            
+            
+            padding-right: 1em;
+            padding-left: 1em;
+            
+            letter-spacing: .2em;
+            font-size: 14pt;
+            line-height: normal;            
+            
+            //---------------------------------
+            input[type=text]{                
+                width: 15em;
+                height: 2em;
+                padding-left: 5px;            
+                
+                border-radius: 10px 0px 0 10px;
+                border: none;
+                border-right: 2px solid black;
+                
+                box-sizing: border-box;
+                font-family: 'Oswald', sans-serif;
+                letter-spacing: .05rem;
+            }
+            input[type=submit]{            
+                display: inline-block;
+                width: 2.6em;
+                height: 2em;                
+                border: none;
+                line-height: 2.1;
+                color: transparent;
+                
+                background: url(https://banner2.kisspng.com/20180802/rzx/kisspng-product-design-logo-magnifying-glass-organization-search-for-parts-servolog-co-il-5b62c7a18735e6.5710335215332002895538.jpg) center center no-repeat;
+                background-color: white;
+                background-position-x: -2px;
+                background-size: 100%;
+                
+                border-radius: 0 10px 10px 0;            
+            }
+            
+            //---------------------------------
+            a{
+                text-decoration-style: none;
+                text-decoration: none;
+                color: white;
+            }
+            a:hover{
+                animation-name: navBarAni;
+                animation-duration: 0.3s;
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+            }
+        }
+        
+    }
+}
+//endregion
+
+
+//region [blue] ASIDE
+//--------------------ASIDE-ELEMENT-------------------------
+aside{
+    height: 50px;
+    width: 50px;
+    position: sticky;
+    top: 90vh;
+    margin-right: 10px;
+    float: right;
+    border-radius: 30px;
+    background-color: $primary2;
+    opacity: 0.3;
+    border: 2px solid darken($primary2, 10%);
+
+    animation: fadeOut 0.5s;
+
+    p{
+        transform: rotate(-135deg);
+        text-align: center;
+        line-height: 1.3em;
+        padding-right: 5px;
+    }
+}
+
+aside:hover{
+    animation: fadeIn 0.5s;
+    animation-fill-mode: forwards;
+}
+
+  //----ARROW-ITSELF-----
+i {
+    border: solid white;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 5px;
+}
+//endregion

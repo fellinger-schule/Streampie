@@ -1,0 +1,87 @@
+$primary2: #eb5e5a;
+$babyBlue: lighten(blue, 20%);
+$primary: #2a2d32;
+$sec: darken(white, 20%);
+
+//region [red] CHARTS
+#artist, #views, #likes{
+    text-decoration: none;
+    font-weight: 100;
+}
+
+#heading{
+    overflow: hidden;
+    position: relative;
+    top: 11em;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    width: fit-content;
+    line-height: 0;
+    text-align: center;
+    border-bottom: 5px solid black;
+    
+    h1{
+        text-transform: uppercase;
+        font-family: 'Roboto Slab', serif;
+        font-size: 50pt;
+    }
+    h2{
+        text-transform: uppercase;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 16.5pt;
+        color: darken($primary2, 10%);
+
+    }
+}
+
+#chartsList{
+    position: relative;
+    height: fit-content;
+    width: 70%;
+    top: 18em;
+    line-height: 3em;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    ul{
+        list-style-type: decimal;
+    }
+    li{
+        height: fit-content;
+        border-bottom: 2px solid lighten(gray, 35%);
+
+        font-family: 'Inconsolata', monospace;
+        font-weight: bold;
+        font-size: 15pt;
+        letter-spacing: .02em;
+
+        img{
+            width: 80px;
+            height: auto;
+            margin-right: 3em;
+            margin-left: 3em;
+            margin-bottom: -1.5em;
+        }
+
+        .viewsAndLikes{
+            height: 20px;
+            width: auto;
+            margin-bottom: -.22em;
+            margin-right: -5px;
+        }
+    }
+    #artist{
+        margin-left: 7em;        
+        margin-right: 7em;        
+    }
+    #views, #likes{
+        font-size: 10pt;
+    }
+    #likes{
+        color: darken($primary2, 20%);
+    }
+}
+//endregion
