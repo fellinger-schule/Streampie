@@ -61,45 +61,48 @@ body{
             text-align: center;
             display: inline-block;
             
-            text-transform: lowercase;
-            font-family: 'Slabo 27px', sans-serif;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
             
             
             padding-right: 1em;
             padding-left: 1em;
             
-            letter-spacing: .2em;
-            font-size: 14pt;
+            letter-spacing: .1em;
+            font-size: 11.5pt;
             line-height: normal;            
             
-            //---------------------------------
+            //---------------SEARCHBAR----------------
+            //WERTE:
+            $sSearchBarColor: darken(white, 20%);
+            $sHeight: 2em;
+            $sBorder: 2px solid $sSearchBarColor;
+
             input[type=text]{                
                 width: 15em;
-                height: 2em;
+                height: $sHeight;
                 padding-left: 5px;            
                 
-                border-radius: 10px 0px 0 10px;
-                border: none;
-                border-right: 2px solid black;
+                border: none;                            
+                border-bottom: $sBorder;
                 
                 box-sizing: border-box;
-                font-family: 'Oswald', sans-serif;
+                font-family: 'Roboto', sans-serif;
                 letter-spacing: .05rem;
+                background-color: transparent;
+                
             }
             input[type=submit]{            
                 display: inline-block;
                 width: 2.6em;
-                height: 2em;                
+                height: $sHeight + .01;
+
                 border: none;
-                line-height: 2.1;
-                color: transparent;
+                border-bottom: $sBorder;
+                color: $sSearchBarColor;
                 
-                background: url(https://banner2.kisspng.com/20180802/rzx/kisspng-product-design-logo-magnifying-glass-organization-search-for-parts-servolog-co-il-5b62c7a18735e6.5710335215332002895538.jpg) center center no-repeat;
-                background-color: white;
-                background-position-x: -2px;
-                background-size: 100%;
                 
-                border-radius: 0 10px 10px 0;            
+                background-color: white;                     
             }
             
             //---------------------------------
