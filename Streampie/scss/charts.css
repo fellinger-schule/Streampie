@@ -1,3 +1,7 @@
+body {
+  height: 200vh;
+}
+
 #artist, #views, #likes {
   text-decoration: none;
   font-weight: 100;

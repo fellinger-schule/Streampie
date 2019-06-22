@@ -3,6 +3,7 @@ $babyBlue: lighten(blue, 20%);
 $primary: #2a2d32;
 $sec: darken(white, 20%);
 
+//--------------------------------
 @keyframes navBarAni{
     from {
         color: white;
@@ -11,6 +12,16 @@ $sec: darken(white, 20%);
         color: lighten($primary2, 10%);
     }
 }
+//--------------------------------
+@keyframes fadeInSearch {
+    0% { opacity: 0.5 }
+    100% { opacity: 1 }
+}
+@keyframes fadeOutSearch {
+    0% { opacity: 1 }
+    100% { opacity: 0.5 }
+}
+//--------------------------------
 @keyframes fadeIn {
     0% { opacity: 0.3 }
     100% { opacity: 1 }
@@ -19,6 +30,8 @@ $sec: darken(white, 20%);
     0% { opacity: 1 }
     100% { opacity: 0.3 }
 }
+//--------------------------------
+
 
 html{
     scroll-behavior: smooth;

@@ -40,7 +40,7 @@ body{
     }
 }
 
-//------------------NAVBAR( + Searchbar)--------------------
+//------------------NAVBAR--------------------
 .navBar{
     position: absolute;
     left: 0;
@@ -71,40 +71,70 @@ body{
             letter-spacing: .1em;
             font-size: 11.5pt;
             line-height: normal;            
-            
+            //endregion           
+
+            //region [red]
             //---------------SEARCHBAR----------------
+
             //WERTE:
-            $sSearchBarColor: darken(white, 20%);
+            $sSearchBarColor: darken(white, 10%);
             $sHeight: 2em;
-            $sBorder: 2px solid $sSearchBarColor;
+            $sBorder: 2px solid $primary2;
+            $animationSearchbar: 1s 1 forwards;         
+
+            input{
+                color: $sSearchBarColor;
+                border: none;
+                border-bottom: $sBorder;
+                font-family: 'Roboto', sans-serif;
+                opacity: 0.7;
+            }            
 
             input[type=text]{                
                 width: 15em;
                 height: $sHeight;
-                padding-left: 5px;            
-                
-                border: none;                            
-                border-bottom: $sBorder;
+                padding-left: 5px;                
                 
                 box-sizing: border-box;
-                font-family: 'Roboto', sans-serif;
                 letter-spacing: .05rem;
                 background-color: transparent;
                 
+                animation: $animationSearchbar;
+                animation-name: fadeOutSearch;
             }
+            input[type=text]:hover{
+                animation: $animationSearchbar;
+                animation-name: fadeInSearch;
+            }
+
             input[type=submit]{            
                 display: inline-block;
                 width: 2.6em;
                 height: $sHeight + .01;
 
-                border: none;
-                border-bottom: $sBorder;
-                color: $sSearchBarColor;
+                font-weight: 800;
+                text-shadow: -1.2px 1.2px 0px black;
                 
-                
-                background-color: white;                     
+                background-color: $primary2;
+
+                animation: $animationSearchbar;
+                animation-name: fadeOutSearch;
             }
+            input[type=submit]:hover{
+                animation: $animationSearchbar;
+                animation-name: fadeInSearch;
+            }
+            input[type=text]:focus{
+                opacity: 1;
+                animation: none;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
             
+            //endregion
+
+            //region[green]
+
             //---------------------------------
             a{
                 text-decoration-style: none;
@@ -116,13 +146,12 @@ body{
                 animation-duration: 0.3s;
                 animation-iteration-count: 1;
                 animation-fill-mode: both;
-            }
+            }            
         }
         
     }
 }
 //endregion
-
 
 //region [blue] ASIDE
 //--------------------ASIDE-ELEMENT-------------------------

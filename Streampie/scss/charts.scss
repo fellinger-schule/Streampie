@@ -3,6 +3,9 @@ $babyBlue: lighten(blue, 20%);
 $primary: #2a2d32;
 $sec: darken(white, 20%);
 
+body{
+    height: 200vh;
+}
 //region [red] CHARTS
 #artist, #views, #likes{
     text-decoration: none;
